@@ -332,7 +332,7 @@ def needs_semicolon(stripped, language):
     if language in {"C", "C++"}:
 
         patterns = [
-            r"^cout\s*<<",
+            r"^(std::)?cout\s*<<",
             r"^cin\s*>>",
             r"^printf\s*\(",
             r"^scanf\s*\(",
