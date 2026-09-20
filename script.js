@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:5000/analyze";
+const API_URL = "https://codefix-ai-1.onrender.com/analyze";
 
 const languageSelect = document.getElementById("languageSelect");
 const codeInput = document.getElementById("codeInput");
