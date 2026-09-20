@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeFix AI - Smart Code Debugger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a class="brand" href="#home" aria-label="CodeFix AI Home">
+            <div class="brand-icon">⚡</div>
+            <span>CodeFix AI</span>
+        </a>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#editor" id="navCodeFix" class="active">Code Fix</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Landing / Home -->
+        <section id="home" class="hero-section">
+            <div class="hero-glow"></div>
+            <div class="hero-content">
+                <div class="eyebrow">AI-POWERED CODE DEBUGGING</div>
+                <h1>Fix Your Code.<br><span>Understand Your Errors.</span></h1>
+                <p>
+                    CodeFix AI finds common programming errors, explains why they happen,
+                    and gives you corrected code — all in one place.
+                </p>
+
+                <div class="hero-actions">
+                    <button id="startBtn" class="start-btn">Start Analyze Code <span>→</span></button>
+                    <a href="#about" class="learn-btn">Learn More</a>
+                </div>
+
+                <div class="language-pills">
+                    <span>C</span>
+                    <span>C++</span>
+                    <span>Python</span>
+                    <span>JavaScript</span>
+                    <span>Java</span>
+                </div>
+            </div>
+
+            <div class="preview-card">
+                <div class="preview-top">
+                    <div class="preview-dots"><i></i><i></i><i></i></div>
+                    <span>Code Fixer</span>
+                </div>
+                <div class="preview-code">
+                    <div><span class="ln">1</span><span>public class Main {</span></div>
+                    <div><span class="ln">2</span><span>&nbsp;&nbsp;System.out.println("Hello World")</span></div>
+                    <div><span class="ln">3</span><span>}</span></div>
+                </div>
+                <div class="preview-error">⚠ Missing semicolon on line 2</div>
+                <div class="preview-fixed">✓ Fixed code ready</div>
+            </div>
+        </section>
+
+        <!-- Editor -->
+        <section id="editor" class="editor-section">
+            <div class="editor-heading">
+                <div>
+                    <div class="section-label">CODE FIX</div>
+                    <h2>Analyze &amp; Fix Your Code</h2>
+                    <p>Paste your code below and let CodeFix AI find the problem.</p>
+                </div>
+                <button id="backHomeBtn" class="back-btn">← Home</button>
+            </div>
+
+            <div class="controls-row">
+                <label class="language-control">
+                    <span>Language</span>
+                    <select id="languageSelect" aria-label="Programming language">
+                        <option value="C">C</option>
+                        <option value="C++" selected>C++</option>
+                        <option value="Python">Python</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Java">Java</option>
+                    </select>
+                </label>
+                <div class="utility-buttons">
+                    <button id="clearBtn" class="secondary-btn">Clear</button>
+                </div>
+            </div>
+
+            <div class="editor-shell">
+                <div class="editor-topbar">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="file-label">code</span>
+                </div>
+                <textarea id="codeInput" spellcheck="false" placeholder="Paste or type your code here..."></textarea>
+                <div class="editor-info">
+                    <span id="lineCount">1 line</span>
+                    <span id="charCount">0 characters</span>
+                </div>
+            </div>
+
+            <button id="analyzeBtn" class="analyze-btn">
+                <span>Analyze Code</span>
+                <span class="arrow">→</span>
+            </button>
+
+            <section class="results-grid">
+                <div class="result-card" id="analysisCard">
+                    <div class="card-header">
+                        <h2>⚠️ Error / Analysis</h2>
+                        <span id="issueBadge" class="badge">0 issues</span>
+                    </div>
+                    <div id="errorOutput" class="error-output">
+                        <div class="empty-state">Run Analyze Code to check your program.</div>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <div class="card-header">
+                        <h2>🛠️ Fixed Code</h2>
+                        <button id="copyBtn" class="copy-btn">Copy Code</button>
+                    </div>
+                    <pre id="fixedCode"><code>Fixed code will appear here.</code></pre>
+                </div>
+            </section>
+        </section>
+
+        <section class="about" id="about">
+            <div class="section-label">ABOUT</div>
+            <h2>CodeFix AI</h2>
+            <p>Find errors, understand them, and fix your code with a simple workflow.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
