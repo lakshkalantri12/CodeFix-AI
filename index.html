@@ -11,8 +11,10 @@
 
 <body>
 
-    <!-- Header -->
+    <!-- ================= HEADER ================= -->
+
     <header class="header">
+
         <div class="logo">
             <span class="logo-icon">⚡</span>
             <span>CodeFix AI</span>
@@ -23,11 +25,15 @@
             <a href="#editor">Code Fixer</a>
             <a href="#about">About</a>
         </nav>
+
     </header>
 
 
-    <!-- Hero Section -->
+    <!-- ================= MAIN ================= -->
+
     <main>
+
+        <!-- ================= HERO ================= -->
 
         <section id="home" class="hero">
 
@@ -58,11 +64,15 @@
         </section>
 
 
-        <!-- Code Editor Section -->
+        <!-- ================= CODE EDITOR ================= -->
+
         <section id="editor" class="editor-section">
 
             <div class="section-heading">
-                <span class="small-title">CODE ANALYZER</span>
+
+                <span class="small-title">
+                    CODE ANALYZER
+                </span>
 
                 <h2>
                     Fix Your Code with
@@ -72,12 +82,14 @@
                 <p>
                     Paste your code below and let CodeFix AI analyze it.
                 </p>
+
             </div>
 
 
             <div class="editor-card">
 
-                <!-- Editor Top Bar -->
+                <!-- TOP AREA -->
+
                 <div class="editor-top">
 
                     <div class="language-area">
@@ -87,23 +99,41 @@
                         </label>
 
                         <select id="language">
-                            <option value="c">C</option>
-                            <option value="cpp">C++</option>
-                            <option value="python">Python</option>
-                            <option value="javascript">JavaScript</option>
-                            <option value="java">Java</option>
+
+                            <option value="c">
+                                C
+                            </option>
+
+                            <option value="cpp">
+                                C++
+                            </option>
+
+                            <option value="python">
+                                Python
+                            </option>
+
+                            <option value="javascript">
+                                JavaScript
+                            </option>
+
+                            <option value="java">
+                                Java
+                            </option>
+
                         </select>
 
                     </div>
 
-                    <div class="status">
+
+                    <div class="status" id="statusText">
                         ● Ready
                     </div>
 
                 </div>
 
 
-                <!-- Code Input -->
+                <!-- ================= CODE BOX ================= -->
+
                 <div class="code-area">
 
                     <label for="codeInput">
@@ -119,18 +149,31 @@
                 </div>
 
 
-                <!-- Analyze Button -->
-                <button id="analyzeBtn" class="analyze-button">
+                <!-- ================= ANALYZE BUTTON ================= -->
+
+                <button
+                    id="analyzeBtn"
+                    class="analyze-button"
+                    type="button"
+                >
                     🔍 Analyze Code
                 </button>
 
 
-                <!-- Result Area -->
-                <div id="resultArea" class="result-area">
+                <!-- ================= RESULTS ================= -->
+
+                <div
+                    id="resultArea"
+                    class="result-area"
+                >
+
+                    <!-- ERROR -->
 
                     <div class="result-box">
 
-                        <h3>⚠️ Error / Analysis</h3>
+                        <h3>
+                            ⚠️ Error / Analysis
+                        </h3>
 
                         <p id="errorResult">
                             Your code analysis will appear here.
@@ -139,13 +182,20 @@
                     </div>
 
 
+                    <!-- FIXED CODE -->
+
                     <div class="result-box">
 
                         <div class="result-header">
 
-                            <h3>🛠️ Fixed Code</h3>
+                            <h3>
+                                🛠️ Fixed Code
+                            </h3>
 
-                            <button id="copyBtn">
+                            <button
+                                id="copyBtn"
+                                type="button"
+                            >
                                 Copy Code
                             </button>
 
@@ -162,7 +212,8 @@
         </section>
 
 
-        <!-- Features -->
+        <!-- ================= FEATURES ================= -->
+
         <section class="features-section">
 
             <div class="section-heading">
@@ -180,11 +231,18 @@
 
             <div class="features-grid">
 
+
+                <!-- FEATURE 1 -->
+
                 <div class="feature-card">
 
-                    <div class="feature-icon">🔍</div>
+                    <div class="feature-icon">
+                        🔍
+                    </div>
 
-                    <h3>Detect Errors</h3>
+                    <h3>
+                        Detect Errors
+                    </h3>
 
                     <p>
                         Identify common coding errors and problems
@@ -194,11 +252,17 @@
                 </div>
 
 
+                <!-- FEATURE 2 -->
+
                 <div class="feature-card">
 
-                    <div class="feature-icon">🛠️</div>
+                    <div class="feature-icon">
+                        🛠️
+                    </div>
 
-                    <h3>Fix Your Code</h3>
+                    <h3>
+                        Automatic Fix
+                    </h3>
 
                     <p>
                         Get an improved version of your code
@@ -208,11 +272,17 @@
                 </div>
 
 
+                <!-- FEATURE 3 -->
+
                 <div class="feature-card">
 
-                    <div class="feature-icon">💡</div>
+                    <div class="feature-icon">
+                        💡
+                    </div>
 
-                    <h3>Explain Errors</h3>
+                    <h3>
+                        Explain Errors
+                    </h3>
 
                     <p>
                         Understand what went wrong and why
@@ -222,11 +292,17 @@
                 </div>
 
 
+                <!-- FEATURE 4 -->
+
                 <div class="feature-card">
 
-                    <div class="feature-icon">📋</div>
+                    <div class="feature-icon">
+                        📋
+                    </div>
 
-                    <h3>Copy Fixed Code</h3>
+                    <h3>
+                        Copy Fixed Code
+                    </h3>
 
                     <p>
                         Copy the corrected code with one click
@@ -240,8 +316,12 @@
         </section>
 
 
-        <!-- About -->
-        <section id="about" class="about-section">
+        <!-- ================= ABOUT ================= -->
+
+        <section
+            id="about"
+            class="about-section"
+        >
 
             <span class="small-title">
                 ABOUT CODEFIX AI
@@ -262,7 +342,8 @@
     </main>
 
 
-    <!-- Footer -->
+    <!-- ================= FOOTER ================= -->
+
     <footer class="footer">
 
         <p>
@@ -271,6 +352,8 @@
 
     </footer>
 
+
+    <!-- ================= SCRIPT ================= -->
 
     <script src="script.js"></script>
 
